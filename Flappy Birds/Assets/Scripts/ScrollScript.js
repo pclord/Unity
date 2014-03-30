@@ -2,12 +2,13 @@
 var seperation : float;
 var back : GameObject;
 var created = false;
+var speed : float;
 function Start () {
 
 }
 
 function Update () {
-	transform.position.x -= 0.05;
+	transform.position.x -= speed;
 	if((transform.position.x < -1) && (created == false)) {
 		Instantiate(back,Vector3(seperation,0,0),Quaternion.identity);
 		created = true;
