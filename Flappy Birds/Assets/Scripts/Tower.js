@@ -1,10 +1,14 @@
 ﻿#pragma strict
 var height : float;
+var min : float;
+var max : float;
 function Start () {
-	height = Mathf.RoundToInt(Random.Range(15.0,30.0));
+	height = Mathf.RoundToInt(Random.Range(min,max));
 	transform.localScale = Vector2(1,height);
 }
 
 function Update () {
-
+	if(transform.position.x < -20) {
+		Destroy(gameObject);
+	}
 }
