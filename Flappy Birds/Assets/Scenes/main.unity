@@ -156,6 +156,7 @@ MonoBehaviour:
   speed: 450
   tower: {fileID: 1895845976}
   freebie: {fileID: 1658228660}
+  start: 0
 --- !u!60 &192427348
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -440,7 +441,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07f029069c7642145ba0825109a100dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seperation: 19.4899998
+  seperation: 19.4400005
   back: {fileID: 1188305215}
   created: 0
   control: {fileID: 1166872939}
@@ -721,6 +722,7 @@ MonoBehaviour:
   height: 0
   min: 15
   max: 25
+  istower: 1
 --- !u!212 &1658228665
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -791,6 +793,7 @@ MonoBehaviour:
   height: 0
   min: 15
   max: 25
+  istower: 1
 --- !u!212 &1895845978
 SpriteRenderer:
   m_ObjectHideFlags: 0
