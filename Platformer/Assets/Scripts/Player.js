@@ -12,5 +12,4 @@ function Update () {
 			transform.position.y += jumpheight;
 		}
 	}
-	transform.ro
 }
